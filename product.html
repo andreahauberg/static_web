@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <title>Produktliste</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" type="image/svg" href="img/star-kopi.svg" />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+          <div id="head_logo">
+            <a href="index.html" class="nav-logo">
+              <img src="img/star-kopi.svg" alt ="logo"/>
+            </a>
+          </div>
+  
+          <ul class="nav_menu">
+            <li class="nav_item">
+              <a href="index.html" class="head_link">Home</a>
+            </li>
+            <li class="nav_item">
+              <a href="category.html" class="head_link">Kategorier</a>
+            </li>
+            <li class="nav_item">
+              <a href="productlist.html" class="head_link">Produktliste</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
+<main>
+    <section class="product">
+        <h3>product</h3>
+        <img src="" alt="">
+        <p><span class="brand"></span> ⎮ <span class="type"></span> </p>
+        <p><span class="price"></span> KR</p>
+        <form>
+            <label>
+                Vælg en størrelse 
+                <select name = "size">
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+
+                </select>
+            </label>
+        </form>
+    </section>
+    <section class="info">
+        <h2>Produktinformation</h2>
+        <dl>
+            <dt>Produktionsår</dt>
+            <dd><span class="production"></span></dd>
+            <dt>Køn</dt>
+            <dd><span class="gender"></span></dd>
+            <dt>Sæson</dt>
+            <dd><span class="season"></span></dd>
+        </dl>
+        <p class="description"></p>
+    </section>
+
+</main>
+      <script src="js/product.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
