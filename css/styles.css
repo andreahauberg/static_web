@@ -21,7 +21,7 @@ main{
 }
 
 img{
-  width:30%;
+  width:60%;
 }
 
 h1 {
@@ -269,7 +269,7 @@ header {
 
 .grid1-1{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 @media(max-width:768px){
@@ -324,8 +324,4 @@ dd{
 /* out of stock */
 .soldout{
   color: #807676;
-}
-
-.hide{
-  display: none;
 }
