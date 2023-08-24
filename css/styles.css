@@ -314,3 +314,14 @@ dd{
     font-size: 2cqw;
   }
 }
+
+/* dicount */
+
+.discount{
+  color: red;
+}
+
+/* out of stock */
+.oos{
+  color: #807676;
+}
