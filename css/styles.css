@@ -322,6 +322,10 @@ dd{
 }
 
 /* out of stock */
-.oos{
+.soldout{
   color: #807676;
+}
+
+.hide{
+  display: none;
 }
