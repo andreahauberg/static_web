@@ -1,4 +1,4 @@
-fetch("https://kea-alt-del.dk/t7/api/products?limit=100")
+fetch("https://kea-alt-del.dk/t7/api/products?limit=10")
     .then((res) => res.json())
     .then((data) => {
         data.forEach(showProduct);

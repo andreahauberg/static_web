@@ -280,6 +280,7 @@ header {
 }
 
 article{
+  position: relative;
   padding-bottom: 3em;
   padding-left: 2em;
 }
@@ -318,10 +319,22 @@ dd{
 /* dicount */
 
 .discount{
-  color: red;
+  position: absolute;
+  color: #333;
+  bottom: 4.5rem;
+  left: 2rem;
+  background-color: rgb(255, 68, 68);
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
 }
 
 /* out of stock */
 .soldout{
-  color: #807676;
+  position: absolute;
+  left: 2rem;
+  top: 5em;
+  color: #333;
+  background-color: #807676;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px;
 }
