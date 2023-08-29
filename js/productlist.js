@@ -1,4 +1,7 @@
-fetch("https://kea-alt-del.dk/t7/api/products?limit=10")
+const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get("id");
+
+fetch("https://kea-alt-del.dk/t7/api/products?limit=10" + id)
     .then((res) => res.json())
     .then((data) => {
         data.forEach(showProduct);
@@ -12,7 +15,7 @@ fetch("https://kea-alt-del.dk/t7/api/products?limit=10")
         if (data.soldout === 0) {
             copy.querySelector(".soldout span").textContent = "Udsolgt";
         } else {
-            copy.querySelector(".soldout span").textContent = "På Lager";
+            copy.querySelector(".soldout").style.display = "none";
         }
     
         if (data.discount !== null) {
@@ -20,8 +23,10 @@ fetch("https://kea-alt-del.dk/t7/api/products?limit=10")
         } else {
             copy.querySelector(".discount").style.display = "none";
         }
-    
         copy.querySelector("img").src = `https://kea-alt-del.dk/t7/images/webp/640/${data.id}.webp`;
+
+        // copy.querySelector(".read-more").setAttribute("href", `product.html?id=${data.id}`);
+    
         document.querySelector("main").appendChild(copy);
     }
     

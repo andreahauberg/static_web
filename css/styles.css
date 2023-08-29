@@ -31,10 +31,12 @@ h1 {
 
 h2{
   font-size:5cqw;
+  max-width: 25ch;
 }
 
 h3{
   font-size: 4cqw;
+  max-width: 30ch;
 }
 
 @media(min-width:900px){
@@ -280,11 +282,13 @@ header {
 }
 
 article{
-  position: relative;
   padding-bottom: 3em;
   padding-left: 2em;
 }
 
+.special1{
+  text-indent: 1rem;
+}
 
 @media(min-width:768px){
   .special1{
@@ -316,13 +320,18 @@ dd{
   }
 }
 
+
+.container{
+  position: relative;
+}
+
 /* dicount */
 
 .discount{
   position: absolute;
   color: #333;
-  bottom: 4.5rem;
-  left: 2rem;
+  bottom: 6px;
+  left: 0;
   background-color: rgb(255, 68, 68);
   font-family: Arial, Helvetica, sans-serif;
   padding: 5px;
@@ -331,10 +340,21 @@ dd{
 /* out of stock */
 .soldout{
   position: absolute;
-  left: 2rem;
-  top: 5em;
+  left: 0rem;
+  top: 0em;
   color: #333;
   background-color: #807676;
   font-family: Arial, Helvetica, sans-serif;
   padding: 5px;
+}
+
+
+.product_img{
+  width: 50%;
+}
+
+@media(min-width:768px){
+  .product_img{
+    width: 40%;
+  }
 }
