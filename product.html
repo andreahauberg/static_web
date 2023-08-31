@@ -25,51 +25,37 @@
             <li class="nav_item">
               <a href="category.html" class="head_link">Kategorier</a>
             </li>
-            <li class="nav_item">
-              <a href="productlist.html" class="head_link">Produktliste</a>
-            </li>
           </ul>
-          <div class="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
         </nav>
       </header>
-<main>
+<main class="grid-1-1">
     <section class="product">
-        <h3>product</h3>
-        <img class = "product_img" src="" alt="">
-        <p><span class="brand"></span> ⎮ <span class="type"></span> </p>
-        <p><span class="price"></span> KR</p>
-        <form>
-            <label>
-                Vælg en størrelse 
-                <select name = "size">
-                    <option>S</option>
-                    <option>M</option>
-                    <option>L</option>
-                    <option>XL</option>
-
-                </select>
-            </label>
-        </form>
+        <img src="" alt="">
+        <p><span class="brand-link"></span> ⎮ <span class="type"></span> </p>
     </section>
     <section class="info">
-        <h2>Produktinformation</h2>
-        <dl>
-            <dt>Produktionsår</dt>
-            <dd><span class="production"></span></dd>
-            <dt>Køn</dt>
-            <dd><span class="gender"></span></dd>
-            <dt>Sæson</dt>
-            <dd><span class="season"></span></dd>
+            <h3>product</h3>
+            <p><span class="price"></span> KR</p>
+            <form>
+              <label>
+                  Vælg en størrelse 
+                  <select name = "size">
+                      <option>S</option>
+                      <option>M</option>
+                      <option>L</option>
+                      <option>XL</option>
+  
+                  </select>
+              </label>
+          </form>
+            <p>Produktionsår: <span class="production"></span></p>
+            <p>Køn: <span class="gender"></span></p>
+            <p>Sæson: <span class="season"></span></p>
         </dl>
         <p class="description"></p>
     </section>
 
 </main>
       <script src="js/product.js"></script>
-    <script src="js/script.js"></script>
 </body>
 </html>
