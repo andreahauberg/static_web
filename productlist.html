@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="da">
-<head>
+  <head>
     <title>Produktliste</title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,40 +8,41 @@
     <meta name="robots" content="noindex, nofollow" />
     <link rel="icon" type="image/svg" href="img/star-kopi.svg" />
     <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="navbar">
-          <div id="head_logo">
-            <a href="index.html" class="nav-logo">
-              <img src="img/star-kopi.svg" alt ="logo"/>
-            </a>
+      <nav class="navbar">
+        <div id="head_logo">
+          <a href="index.html" class="nav-logo">
+            <img src="img/star-kopi.svg" alt="logo" />
+          </a>
+        </div>
+
+        <ul class="nav_menu">
+          <li class="nav_item">
+            <a href="index.html" class="head_link">Home</a>
+          </li>
+          <li class="nav_item">
+            <a href="category.html" class="head_link">Kategorier</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <h1 class="special1">Produktliste</h1>
+    <main class="grid1-1">
+      <template>
+        <article>
+          <h2 class="special2"></h2>
+          <div class="container">
+            <img src="" alt="" />
+            <p class="soldout"><span></span></p>
+            <p class="discount">Rabat: -<span></span>%</p>
+            <br /><br />
           </div>
-  
-          <ul class="nav_menu">
-            <li class="nav_item">
-              <a href="index.html" class="head_link">Home</a>
-            </li>
-            <li class="nav_item">
-              <a href="category.html" class="head_link">Kategorier</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <h1 class="special1">Produktliste</h1>
-<main class="grid1-1">
-    <template>
-      <article>
-        <h2 class="special2"></h2>
-        <div class="container">
-        <img src="" alt="" >
-        <p class="soldout"> <span></span></p>
-        <p class="discount">Rabat: -<span></span>%</p>
-         <br><br></div>
-        <a class="read-more" href="product.html" >læs mere</a>
-      </article>
-    </template>
-</main>
-      <script src="js/productlist.js"></script>
-</body>
+          <a class="read-more" href="product.html">læs mere</a>
+        </article>
+      </template>
+    </main>
+    <script src="js/productlist.js"></script>
+  </body>
 </html>
