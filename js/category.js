@@ -2,7 +2,7 @@ fetch("https://kea-alt-del.dk/t7/api/categories")
     .then(res => res.json())
     .then(showCategories)
 
-    function showCategories(cats){ // Renamed function
+    function showCategories(cats){
         cats.forEach(showCategory)
     }
 
